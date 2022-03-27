@@ -1,5 +1,5 @@
 echo "[install] tar using yum ... "
-yum install tar
+yum install -y tar
 
 echo "[install] sqlite3 from source ..."
 #yum install -y sqlite-devel
