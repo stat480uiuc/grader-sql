@@ -1,4 +1,7 @@
-echo "[install] sqlite3 ..."
+echo "[install] tar using yum ... "
+yum install tar
+
+echo "[install] sqlite3 from source ..."
 #yum install -y sqlite-devel
 
 # Download the latest sqlite version (require 3.25 for window functions)
@@ -16,5 +19,5 @@ make install
 # Clean up
 cd .. && rm -r ./sqlite-autoconf-3380200
 
-echo "[install] Python packages ..."
+echo "[install] Python packages from pypi ..."
 python3 -m pip install --no-cache-dir -r /requirements-sql.txt
